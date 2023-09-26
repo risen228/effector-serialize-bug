@@ -6,17 +6,24 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint \"{src,pages,app,lib}/**/*.{js,mjs,cjs,ts,mts,jsx,tsx}\"",
+    "lint:fix": "eslint \"{src,pages,app,lib}/**/*.{js,mjs,cjs,ts,mts,jsx,tsx}\" --fix"
   },
   "dependencies": {
+    "@effector/next": "^0.6.1",
+    "effector": "^22.8.7",
+    "effector-react": "^22.5.4",
+    "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "next": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/react": "latest",
     "@types/node": "latest",
-    "@types/react-dom": "latest"
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "^8.41.0",
+    "eslint-kit": "^10.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "latest"
   }
 }
